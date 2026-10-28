@@ -1,52 +1,56 @@
-// var newElement=document.createElement("h4");
-// newElement.id='demo';
-// newElement.className='demoo';
-// newElement.innerHTML='Hello WOrld';
-// console.log(newElement)
-//  document.body.appendChild(newElement);
-// const parent=document.querySelector('#test');
-// parent.insertBefore(newElement,parent.children[1]);
-
-// document.querySelector("#red").onclick = function () {
-//   document.querySelector("#demo").style.color = "red";
-// };
-// document.querySelector("#blue").onclick = function () {
-//   document.querySelector("#demo").style.color = "blue";
-// };
-
-// document.querySelector("#green").onclick = function () {
-//   document.querySelector("#demo").style.color = "green";
-// };
-
-document.querySelectorAll("button").forEach(function (item) {
-  item.onclick = function () {
-    document.querySelector("#demo").style.color = item.dataset.color;
-    document.querySelector("#demo").style.textAlign = item.dataset.location;
-  };
-});
-
-document.querySelector("#form").addEventListener("submit", (e) => {
-  let inputwork = document.querySelector("#inputWork");
-  let result = document.querySelector("#result");
-  if (inputwork.value === "") {
-    alert("Enter Data");
-    e.preventDefault();
+window.addEventListener("scroll", function () {
+  var scrollValue = window.scrollY;
+  var navbar = document.querySelector(".navbar");
+  if (scrollValue > 300) {
+    navbar.setAttribute(
+      "class",
+      "navbar md:navbar-expand bg-primary sticky-top",
+    );
   } else {
-    result.innerHTML += `
-      <li class="d-flex justify-content-between align-items-center mb-2 p-2 border rounded mt-3">
-    <span>${inputwork.value}</span>
-    <button class="btn-solid theme-danger"onclick="deleteTodoList(this)">Delete</button>
-  </li>
-`
-    inputwork.value = "";
-    e.preventDefault();
+    navbar.setAttribute(
+      "class",
+      "navbar md:navbar-expand bg-danger sticky-top",
+    );
   }
 });
-// document.querySelector("#result").addEventListener("click", (e) => {
-//   if (e.target.classList.contains("delete-btn")) {
-//     e.target.closest("li").remove();
-//   }
-// });
-function deleteTodoList(todo){
-    todo.parentElement.remove()
+
+// Set Interval 
+let clearFunction=setInterval(myTimer,1000);
+function myTimer(){
+  let dateNow=new Date;
+  document.querySelector('#demo').innerHTML=dateNow;
+
 }
+document.getElementById('stop').addEventListener('click',function(){
+ clearInterval(clearFunction)
+})
+document.getElementById('countine').addEventListener('click',function(){
+ clearFunction=setInterval(myTimer,2000)
+})
+// Set Time out 
+
+function getData() {
+    Swal.fire({
+    title: 'Hello!',
+    text: 'Time is up!',
+    icon: 'success',
+    confirmButtonText: 'OK'
+  });
+}
+
+let timeoutId;
+
+document.getElementById('click').addEventListener('click', function () {
+  timeoutId = setTimeout(getData, 3000);
+});
+
+document.getElementById('stopTimeout').addEventListener('click', function () {
+    clearTimeout(timeoutId);
+
+  Swal.fire({
+    title: 'Stopped!',
+    text: 'The timeout has been cancelled.',
+    icon: 'info',
+    confirmButtonText: 'OK'
+  });
+});

@@ -4,31 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM JS</title>
+    <title>BOM JS</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-<h2 id="demo">Lorem ipsum dolor sit.</h2>
-<button data-color="red" data-location="left">Red</button>
-<button data-color="blue" data-location="right">Blue</button>
-<button data-color="green" data-location="center">Green</button>
-<div class="container mt-12">
-    <div class="row">
-        <div class="md:col-10 m-auto">
-            <h3 class="text-center">TO do List</h3>
-            <form action="" id="form">
-                <input type="text" name="todoText" id="inputWork" class="form-control my-5 bg-white fg-black" placeholder="Enter your works">
-                <input type="submit" value="Enter" class="btn-solid theme-accent d-block w-100">
-        </form>
-        <ul id="result">
-
+<nav class="navbar md:navbar-expand bg-danger sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Menu
+            </button>
+            <div class="menu">
+              <a class="menu-item" href="#">Action</a>
+              <a class="menu-item" href="#">Another action</a>
+              <hr class="menu-divider">
+              <a class="menu-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
         </ul>
-        </div>
-    </div>
-</div>
+        <form class="hstack gap-2" role="search">
+          <input class="form-control bg-white " type="search" placeholder="Search" aria-label="Search"/>
 
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+<p class="p-8 container">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, facere. Tempora aut eius fugit at perferendis provident reprehenderit, unde facere. Sit facere enim inventore praesentium. Molestias doloribus velit quos. Officia qui ratione, eveniet eum placeat explicabo, eaque alias non molestiae minus excepturi, vero tempora? Quae labore, velit fugiat asperiores debitis eum pariatur similique doloremque, culpa sint inventore quam modi vitae fuga dolor cum earum totam dignissimos quis voluptas aliquam amet quo accusamus ullam? A obcaecati fugit aliquid sapiente ipsa possimus. Obcaecati, voluptatem aliquam corporis officia nisi nulla perspiciatis suscipit, assumenda earum quae vero mollitia doloribus dolor itaque facilis magnam error.
+</p>
+<p class="p-8 container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio voluptatibus illum quia laboriosam aspernatur aliquam laudantium deleniti quos corporis asperiores odit sunt maiores ab tempora sint similique fugit, impedit ad dolore vitae? Officiis error voluptate soluta optio cum beatae tenetur totam amet enim minus, incidunt doloremque dolor fuga, vel debitis quae facilis. Asperiores et doloribus, alias reiciendis similique sapiente, aperiam expedita molestias dolorem architecto omnis ullam incidunt porro ipsum vero possimus dolores temporibus consectetur facilis doloremque exercitationem consequuntur provident ipsam ab. Voluptate maiores asperiores sapiente, itaque eveniet magnam quae magni in error recusandae, corrupti quaerat cupiditate sequi labore minus cum, repudiandae earum nostrum voluptatum consectetur aliquid nulla quam inventore. Ad repudiandae debitis, quisquam doloribus reprehenderit, iusto numquam, sunt sequi quas aliquid iure commodi. Quod obcaecati quam at quidem voluptate? Sunt nobis, illum atque, adipisci harum unde doloremque facilis corporis soluta repudiandae aut vitae quos, quae dolores id. Ex suscipit delectus quo perferendis deserunt atque mollitia vitae, neque assumenda sunt eligendi laboriosam dicta! At similique architecto magni odio commodi, corporis iure mollitia modi nihil repellat, aliquid harum nulla ducimus. Expedita eaque laudantium, autem veniam nostrum consequuntur magni aspernatur repellat iste eligendi numquam culpa eos nemo id nobis fugit officia. Aspernatur error fugiat maxime quaerat consectetur quam, eius numquam architecto autem corporis veritatis, omnis ex voluptate sunt exercitationem commodi soluta! Pariatur dolores qui esse error atque, ut necessitatibus quaerat sint cumque saepe. Repellat doloribus quae quam aspernatur. Sed est illo itaque quae dolores ratione cum ipsum, obcaecati vel vero necessitatibus laboriosam laudantium. Pariatur doloremque et id hic neque? Sint, itaque earum iusto incidunt voluptatibus sed deserunt vel, totam reiciendis, laudantium eaque. Voluptatibus dicta recusandae alias corporis, repudiandae qui a suscipit ex. Est maiores eius, consequuntur autem quasi debitis fuga atque vero repudiandae sed tempora hic quisquam deleniti nostrum praesentium? Dicta, atque! Suscipit provident perspiciatis error iusto, minus commodi illum ipsa est voluptate deleniti, eveniet ullam dolor sapiente omnis qui? Voluptatum repellat deleniti dolorem nihil, asperiores quidem blanditiis. Laboriosam esse blanditiis quis odit voluptatibus maxime fugiat ratione dicta soluta perspiciatis tempore, quia harum fugit nulla excepturi consectetur dignissimos! Esse numquam possimus repellendus inventore nobis, ipsam omnis ad rem quidem ducimus! Iure earum neque odit? Et odio vitae autem repudiandae, vel a tempora officiis harum dolorum quaerat illum dolor qui non amet aperiam rem omnis repellat impedit incidunt minus magnam? Iste autem est voluptas quasi quibusdam in nihil quidem, itaque, placeat magnam, nesciunt cum odio laborum iusto officia! Officia dolor ipsam ratione vitae facilis, quis laboriosam placeat accusantium dolores, incidunt odio! Dolor soluta corporis quibusdam, aut ullam illo tenetur repudiandae natus. Laudantium sit reiciendis facilis sapiente ut expedita deleniti temporibus obcaecati nihil praesentium sint iure laboriosam ad facere, beatae blanditiis explicabo amet hic in quas dolorum tenetur corrupti? Velit incidunt maiores nostrum reprehenderit molestias assumenda ipsa autem! Voluptatibus accusamus cumque nobis qui aut at totam rerum animi maxime autem reprehenderit dicta id non eligendi dolorem corrupti, consectetur quod, obcaecati quaerat minus numquam laborum! Sed atque vero nemo velit adipisci, commodi, accusamus perspiciatis delectus ratione voluptatum culpa. Soluta nulla incidunt eaque ullam possimus. Rerum, vel aspernatur maxime quidem autem optio mollitia distinctio! Soluta voluptas qui ad, consequuntur alias quisquam tempore quia laboriosam dolor, ullam earum fugiat deserunt veritatis necessitatibus omnis quas ipsam saepe aliquid? Accusamus fuga accusantium culpa magnam odio dolores quaerat assumenda saepe placeat, quisquam vitae dicta sapiente reiciendis consectetur. Molestias perspiciatis iste dignissimos rerum reprehenderit culpa maiores, ullam quisquam aut at labore doloremque nemo tenetur harum mollitia libero hic fugiat iusto aliquam nesciunt recusandae eum temporibus cumque dolore? Eos fuga sed minus! Voluptatum maiores animi nobis minus, ut cumque et modi. Tenetur fuga, ea temporibus iste neque enim laboriosam dicta sit amet omnis consectetur maxime ab rerum, minus excepturi earum est facere! Ratione temporibus laborum molestiae, facilis provident, similique nemo delectus quia qui officiis, et vero impedit eveniet deleniti mollitia odit earum aspernatur rerum tempora. Sapiente, numquam. Quisquam dicta deleniti voluptatem impedit voluptate, sequi, cupiditate provident ab repellat soluta enim. Accusamus provident cum iste aliquam iusto asperiores magni delectus ut amet. Provident quo, eos libero rem fuga, itaque cupiditate reprehenderit omnis ad eligendi, molestiae illo sit explicabo aperiam hic nihil? Odit labore dolorum voluptatibus, corrupti asperiores ex ullam magnam quod atque, suscipit expedita molestias, distinctio provident quia? Ipsum, facilis. Nihil ad impedit minima adipisci dolor rerum, neque libero totam excepturi deleniti fuga eos veritatis ex perspiciatis ratione itaque quam maxime voluptatem aperiam, veniam tempora? Autem rem deleniti et saepe exercitationem sapiente, voluptates est ullam hic, quos aut aliquid facilis voluptas nostrum, possimus quas! Ab obcaecati hic qui est et ea enim? Laborum adipisci quisquam, sit harum porro accusantium reprehenderit mollitia laboriosam! Velit maiores neque laboriosam possimus, suscipit, animi eligendi porro veniam aliquam maxime quidem aut et culpa alias voluptates assumenda error voluptatum cum odit, rem ea ex. Ipsa, quidem voluptates odit doloremque minima et iusto ullam sapiente eius eum earum nam veniam culpa necessitatibus saepe itaque aspernatur. Expedita ab, ex laboriosam iure ea ad eos explicabo sequi voluptas ratione minus fugit facere molestiae, ipsum rem voluptate, ut laborum inventore. Aperiam eaque, expedita nulla ipsa consequatur ea. Vel, voluptatibus voluptates libero vero atque eos molestias optio rerum facilis voluptas dignissimos excepturi sapiente suscipit porro, iure sed accusantium amet. Quo ad harum possimus, assumenda blanditiis omnis rerum. Reprehenderit architecto non quod officiis sapiente, nulla natus assumenda similique neque voluptatem aperiam quo doloremque fuga doloribus praesentium nobis fugiat illum? Modi saepe repellendus ipsam voluptas, commodi minima voluptates numquam enim dolorem distinctio dolor libero accusamus maxime temporibus, repudiandae ipsum aliquam cum consequatur dicta, vel aut eveniet fugiat eum id. Consectetur sunt dolorem nobis quam, nesciunt debitis error reiciendis placeat molestias libero fuga. Similique provident beatae illo sit ipsum mollitia, culpa dicta, dolorem repellendus eveniet debitis dignissimos unde in iste voluptates nemo eum sint nulla totam. Accusantium illum perferendis voluptatibus, nemo maiores asperiores vero. Nostrum saepe ad provident dignissimos tempore architecto, dolorem dolores iste unde, error, doloremque repudiandae nesciunt. Impedit illum quasi dolorum! Ea nam vitae molestias culpa! Error repellat ullam provident a sapiente ab quas, animi quam.</p>
+<h4>SetInterval Function</h4>
+<h2 id="demo"></h2>
+<button id="stop">Stop</button>
+<button id="countine">countine</button>
+<h4>SetTimeOut Function</h4>
+<button id="click">Click</button>
+<button id="stopTimeout">Stop </button>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="JS/main.js"></script>
 </body>
 
